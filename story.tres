@@ -1,0 +1,68 @@
+[gd_resource type="JSON" format=3 uid="uid://47mh750gax3m"]
+
+[resource]
+data = {
+"distraction.tscn": {
+"dialogue": ["You leave room 1 and arrive at room 3...", "There is..."],
+"options": [{
+"affection": 0.0,
+"next": "",
+"text": "1"
+}, {
+"affection": 0.0,
+"next": "",
+"text": "2"
+}, {
+"affection": 0.0,
+"next": "",
+"text": "3"
+}, {
+"affection": 0.0,
+"next": "",
+"text": "4"
+}],
+"question": "How can you get out of this situation?"
+},
+"drive.tscn": {
+"dialogue": ["You leave room 1 and arrive at room 2..."],
+"options": [{
+"affection": 0.0,
+"next": "",
+"text": "1"
+}, {
+"affection": 0.0,
+"next": "",
+"text": "2"
+}, {
+"affection": 0.0,
+"next": "",
+"text": "3"
+}, {
+"affection": 0.0,
+"next": "",
+"text": "4"
+}],
+"question": "What will you do"
+},
+"phone.tscn": {
+"dialogue": ["You arrive in room 1..", "There is..."],
+"options": [{
+"affection": 5.0,
+"next": "drive.tscn",
+"text": "go to 2"
+}, {
+"affection": 1.0,
+"next": "drive.tscn",
+"text": "go to 2"
+}, {
+"affection": -5.0,
+"next": "distraction.tscn",
+"text": "go to 3"
+}, {
+"affection": 1.0,
+"next": "distraction.tscn",
+"text": "go to 3"
+}],
+"question": "What will you do?"
+}
+}

@@ -1,47 +1,7 @@
 extends Node2D
 
-var scene_text = {
-	"phone.tscn": {
-		"dialogue": [ 
-			"You arrive in room 1..",
-			"There is..."
-		],
-		"question": "What will you do?",
-		"options": [
-			{"text": "go to 2", "affection":5, "next": "drive.tscn"},
-			{"text": "go to 2", "affection":1, "next": "drive.tscn"},
-			{"text": "go to 3", "affection":-5, "next": "distraction.tscn"},
-			{"text": "go to 3", "affection":1, "next": "distraction.tscn"}
-		]
-	},
-
-	"drive.tscn": {
-		"dialogue": [ 
-			"You leave room 1 and arrive at room 2..."
-		],
-		"question": "What will you do",
-		"options": [
-			{"text": "1", "affection":0, "next": ""},
-			{"text": "2", "affection":0, "next": ""},
-			{"text": "3", "affection":0, "next": ""},
-			{"text": "4", "affection":0, "next": ""}
-		]
-	},
-
-	"distraction.tscn": {
-		"dialogue": [ 
-			"You leave room 1 and arrive at room 3...",
-			"There is..."
-		],
-		"question": "How can you get out of this situation?",
-		"options": [
-			{"text": "1", "affection":0, "next": ""},
-			{"text": "2", "affection":0, "next": ""},
-			{"text": "3", "affection":0, "next": ""},
-			{"text": "4", "affection":0, "next": ""}
-		]
-	}
-}
+@export var story_resource: String = "res://story.tres"
+var scene_text = load(story_resource).data
 
 var current_scene
 var affection = 50
@@ -74,13 +34,11 @@ func play_scene(scene_name):
 		self.add_child(current_scene)
 	
 	# play dialogue
+	print(scene_text)
 	if scene_text[scene_name]:
 		$dialogue.play(scene_text[scene_name])
 	
-func open_prompt(scene):
-	$prompt.visible = true
-	$prompt.ask_question(scene)
-
+func open_prompt(scene): $prompt.visible = true; $prompt.ask_question(scene)
 func change_affection(change_amount): set_affection(affection + change_amount)
 func set_affection(amount): affection = amount
 
