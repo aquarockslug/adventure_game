@@ -2,34 +2,7 @@
 
 [resource]
 data = {
-"distraction.tscn": {
-"dialogue": ["You radio a status report to the Moray and tell
-them that you are going to cast off from the line
-and descend under your own power. Your plan is
-approved and you cast off your line. Now you are
-on your own. The Seeker slips noiselessly into the
-undersea canyon.", "Suddenly, a school of bright yellow angel fish
-dart by, almost brushing you. What made them
-move so fast? Are they being chased?", "Then you see it. The Seeker is in the grips of a
-huge sea monster. It is similar to a squid, but it is
-enormous. The Seeker is just a toy in its long,
-powerful tentacles. You seek shelter behind a rock
-formation. You know the spear gun you carry will
-be useless against this monster. It looks as though it
-will destroy the Seeker. Fish of all sizes huddle with
-you in an attempt to escape the monster."],
-"options": [{
-"depth": 0.0,
-"next": "",
-"text": "Stay hidden close to the Seeker"
-}, {
-"depth": 0.0,
-"next": "",
-"text": "Try to escape"
-}],
-"question": "How can you get out of this situation?"
-},
-"drive.tscn": {
+"canyon.tscn": {
 "dialogue": ["Your sea suit will protect you from the intense
 pressures of the deep. It is a tight fit and takes you
 some time to put it on. Finally you slip from the
@@ -56,7 +29,34 @@ bles rising steadily from the floor of the canyon."],
 }],
 "question": "What will you do?"
 },
-"phone.tscn": {
+"sea_monster.tscn": {
+"dialogue": ["You radio a status report to the Moray and tell
+them that you are going to cast off from the line
+and descend under your own power. Your plan is
+approved and you cast off your line. Now you are
+on your own. The Seeker slips noiselessly into the
+undersea canyon.", "Suddenly, a school of bright yellow angel fish
+dart by, almost brushing you. What made them
+move so fast? Are they being chased?", "Then you see it. The Seeker is in the grips of a
+huge sea monster. It is similar to a squid, but it is
+enormous. The Seeker is just a toy in its long,
+powerful tentacles. You seek shelter behind a rock
+formation. You know the spear gun you carry will
+be useless against this monster. It looks as though it
+will destroy the Seeker. Fish of all sizes huddle with
+you in an attempt to escape the monster."],
+"options": [{
+"depth": 0.0,
+"next": "",
+"text": "Stay hidden close to the Seeker"
+}, {
+"depth": 0.0,
+"next": "",
+"text": "Try to escape"
+}],
+"question": "How can you get out of this situation?"
+},
+"start.tscn": {
 "dialogue": ["You are an underwater explorer. You are leav-
 ing to explore the deepest oceans. You must find
 the lost city of Atlantis. This is your most challeng-
@@ -64,20 +64,20 @@ ing assignment. The Seeker crew is being lowered from the Maray by a
 strong, but thin cable.", "Within minutes, you are so
 deep in the ocean that little light filters down to
 you. The silence is eerie as the Seeker slips deeper
-and deeper.", "Now the cable attaching you to Maray is ex-
+and deeper.", "Now the cable attaching you to Moray is ex-
 tended almost to its limit. You have come to rest on
 a ledge near the canyon in the ocean floor that
 supposedly leads to the lost city of Atlantis."],
 "options": [{
 "depth": 0.0,
-"next": "drive.tscn",
+"next": "sea_monster.tscn",
 "text": "explore the ledge
 where the Seeker has come to rest"
 }, {
 "depth": 0.0,
-"next": "distraction.tscn",
+"next": "canyon.tscn",
 "text": "cut loose from
-the Maray and dive with the Seeker
+the Moray and dive with the Seeker
 into the canyon in the ocean floor"
 }],
 "question": "What will you do?"

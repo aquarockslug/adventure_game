@@ -6,10 +6,11 @@ var scene_text = load(story_resource).data
 var current_scene
 var depth = 0 
 
+# todo: preload scenes dir with loop
 var scene_tscn = {
-	"phone.tscn": preload("res://phone.tscn"),
-	"drive.tscn": preload("res://drive.tscn"),
-	"distraction.tscn": preload("res://distraction.tscn"),
+	"start.tscn": preload("res://scenes/start.tscn"),
+	"canyon.tscn": preload("res://scenes/canyon.tscn"),
+	"sea_monster.tscn": preload("res://scenes/sea_monster.tscn"),
 }
 
 func _ready():
@@ -19,7 +20,7 @@ func _ready():
 func _start_game():
 	$title_screen.visible = false
 	$prompt.visible = true
-	play_scene("phone.tscn")
+	play_scene("start.tscn")
 	
 func play_scene(scene_name):
 	$prompt.visible = false
