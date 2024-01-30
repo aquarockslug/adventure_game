@@ -33,9 +33,8 @@ func play_scene(scene_name):
 		current_scene = scene_tscn[scene_name].instantiate()
 		self.add_child(current_scene)
 	
-	# play dialogue
-	print(scene_text)
-	if scene_text[scene_name]: $dialogue.play(scene_text[scene_name])
+	# play 
+	if scene_name != "": $dialogue.play(scene_text[scene_name])
 	
 func open_prompt(scene): $prompt.visible = true; $prompt.ask_question(scene)
 func change_affection(change_amount): set_affection(affection + change_amount)

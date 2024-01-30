@@ -8,23 +8,24 @@ them that you are going to cast off from the line
 and descend under your own power. Your plan is
 approved and you cast off your line. Now you are
 on your own. The Seeker slips noiselessly into the
-undersea canyon."],
+undersea canyon.", "Suddenly, a school of bright yellow angel fish
+dart by, almost brushing you. What made them
+move so fast? Are they being chased?", "Then you see it. The Seeker is in the grips of a
+huge sea monster. It is similar to a squid, but it is
+enormous. The Seeker is just a toy in its long,
+powerful tentacles. You seek shelter behind a rock
+formation. You know the spear gun you carry will
+be useless against this monster. It looks as though it
+will destroy the Seeker. Fish of all sizes huddle with
+you in an attempt to escape the monster."],
 "options": [{
 "affection": 0.0,
 "next": "",
-"text": "1"
+"text": "Stay hidden close to the Seeker"
 }, {
 "affection": 0.0,
 "next": "",
-"text": "2"
-}, {
-"affection": 0.0,
-"next": "",
-"text": "3"
-}, {
-"affection": 0.0,
-"next": "",
-"text": "4"
+"text": "Try to escape"
 }],
 "question": "How can you get out of this situation?"
 },
@@ -36,25 +37,24 @@ airlock of the Seeker and stand on the ocean floor.
 It is a strange and marvelous world where your
 every move is slowed down. You begin to explore
 with your special hand-held searchlight. You
-examine the ledge by the canyon."],
+examine the ledge by the canyon.", "As you drop into the canyon, you turn on the
+Seeker's powerful searchlight. Straight ahead is a
+dark wall covered with a strange type of barnacle
+growth. To the left (port) side you see what ap-
+pears to be a grotto. The entrance is perfectly
+round, as if it had been cut by human hands.", "Lantern fish give off a pale, greenish light. To the
+right (starboard) side of the Seeker you see bub-
+bles rising steadily from the floor of the canyon."],
 "options": [{
 "affection": 0.0,
 "next": "",
-"text": "1"
+"text": "investigate bubbles"
 }, {
 "affection": 0.0,
 "next": "",
-"text": "2"
-}, {
-"affection": 0.0,
-"next": "",
-"text": "3"
-}, {
-"affection": 0.0,
-"next": "",
-"text": "4"
+"text": "investigate grotto"
 }],
-"question": "What will you do"
+"question": "What will you do?"
 },
 "phone.tscn": {
 "dialogue": ["You are an underwater explorer. You are leav-
