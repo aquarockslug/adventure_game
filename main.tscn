@@ -1,16 +1,22 @@
-[gd_scene load_steps=8 format=3 uid="uid://bsplnkju8h0m3"]
+[gd_scene load_steps=10 format=3 uid="uid://bsplnkju8h0m3"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_efkcx"]
-[ext_resource type="PackedScene" uid="uid://nclmb31of5ke" path="res://prompt.tscn" id="1_gw8ds"]
 [ext_resource type="Theme" uid="uid://bltjtyy1vdjy1" path="res://Buttons.tres" id="2_ne72b"]
+[ext_resource type="Script" path="res://prompt.gd" id="3_lws46"]
 [ext_resource type="Script" path="res://dialogue.gd" id="4_o5ux6"]
 [ext_resource type="FontFile" uid="uid://du1h1qwwjq3y0" path="res://PeaberryBase.ttf" id="5_fcngv"]
+[ext_resource type="FontFile" uid="uid://bwdgyxqyt2qwe" path="res://iosevka.ttc" id="6_21s55"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_76h2p"]
+font = ExtResource("5_fcngv")
 font_size = 96
 
+[sub_resource type="LabelSettings" id="LabelSettings_1irrn"]
+font = ExtResource("6_21s55")
+font_size = 32
+
 [sub_resource type="LabelSettings" id="LabelSettings_w3sv8"]
-font = ExtResource("5_fcngv")
+font = ExtResource("6_21s55")
 font_size = 32
 
 [node name="main" type="Node2D"]
@@ -34,12 +40,12 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -76.0
-offset_top = -186.0
-offset_bottom = -152.0
+offset_left = -100.0
+offset_top = -180.0
+offset_right = 100.0
+offset_bottom = -80.0
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(2, 2)
 theme = ExtResource("2_ne72b")
 text = "Start"
 
@@ -53,11 +59,62 @@ offset_top = 300.0
 offset_right = 15.5
 offset_bottom = 323.0
 grow_horizontal = 2
-text = "adventure
+text = "Atlantis Adventure
 "
 label_settings = SubResource("LabelSettings_76h2p")
 
-[node name="prompt" parent="." instance=ExtResource("1_gw8ds")]
+[node name="prompt" type="Control" parent="."]
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+offset_top = 805.0
+offset_right = 1920.0
+offset_bottom = 1075.0
+script = ExtResource("3_lws46")
+metadata/_edit_use_anchors_ = true
+
+[node name="opt1" type="Button" parent="prompt"]
+custom_minimum_size = Vector2(640, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 76.0
+grow_vertical = 2
+theme = ExtResource("2_ne72b")
+text = "option1"
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="opt2" type="Button" parent="prompt"]
+custom_minimum_size = Vector2(640, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("2_ne72b")
+text = "option2
+"
+
+[node name="question" type="Label" parent="prompt"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sample question"
+label_settings = SubResource("LabelSettings_1irrn")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="dialogue" type="Control" parent="."]
 layout_mode = 3
@@ -68,9 +125,10 @@ script = ExtResource("4_o5ux6")
 
 [node name="dialogue_box" type="Label" parent="dialogue"]
 layout_mode = 0
-offset_top = 639.0
-offset_right = 1920.0
-offset_bottom = 855.0
+offset_left = 320.0
+offset_top = 825.0
+offset_right = 1600.0
+offset_bottom = 1041.0
 label_settings = SubResource("LabelSettings_w3sv8")
-horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 3
