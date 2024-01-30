@@ -4,7 +4,7 @@ extends Node2D
 var scene_text = load(story_resource).data
 
 var current_scene
-var affection = 50 # depth instead?
+var depth = 0 
 
 var scene_tscn = {
 	"phone.tscn": preload("res://phone.tscn"),
@@ -23,7 +23,7 @@ func _start_game():
 	
 func play_scene(scene_name):
 	$prompt.visible = false
-	print("Current affection: ", affection)
+	print("Current depth: ", depth)
 	
 	# remove previous scene if there is one
 	if current_scene: current_scene.queue_free()
@@ -37,8 +37,9 @@ func play_scene(scene_name):
 	if scene_name != "": $dialogue.play(scene_text[scene_name])
 	
 func open_prompt(scene): $prompt.visible = true; $prompt.ask_question(scene)
-func change_affection(change_amount): set_affection(affection + change_amount)
-func set_affection(amount): affection = amount
+func change_depth(change_amount): set_depth(depth + change_amount)
+func set_depth(amount): depth = amount
+func format_story(): print(JSONBeautifier.beautify_json(JSON.stringify(scene_text)))
 
 
 

@@ -1,4 +1,4 @@
-[gd_resource type="JSON" format=3 uid="uid://47mh750gax3m"]
+[gd_resource type="JSON" format=3 uid="uid://duyckpmk4pnlg"]
 
 [resource]
 data = {
@@ -19,11 +19,11 @@ be useless against this monster. It looks as though it
 will destroy the Seeker. Fish of all sizes huddle with
 you in an attempt to escape the monster."],
 "options": [{
-"affection": 0.0,
+"depth": 0.0,
 "next": "",
 "text": "Stay hidden close to the Seeker"
 }, {
-"affection": 0.0,
+"depth": 0.0,
 "next": "",
 "text": "Try to escape"
 }],
@@ -46,11 +46,11 @@ round, as if it had been cut by human hands.", "Lantern fish give off a pale, gr
 right (starboard) side of the Seeker you see bub-
 bles rising steadily from the floor of the canyon."],
 "options": [{
-"affection": 0.0,
+"depth": 0.0,
 "next": "",
 "text": "investigate bubbles"
 }, {
-"affection": 0.0,
+"depth": 0.0,
 "next": "",
 "text": "investigate grotto"
 }],
@@ -69,12 +69,12 @@ tended almost to its limit. You have come to rest on
 a ledge near the canyon in the ocean floor that
 supposedly leads to the lost city of Atlantis."],
 "options": [{
-"affection": 0.0,
+"depth": 0.0,
 "next": "drive.tscn",
 "text": "explore the ledge
 where the Seeker has come to rest"
 }, {
-"affection": 0.0,
+"depth": 0.0,
 "next": "distraction.tscn",
 "text": "cut loose from
 the Maray and dive with the Seeker

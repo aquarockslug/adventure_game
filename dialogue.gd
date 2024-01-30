@@ -13,11 +13,10 @@ func play(scene):
 func _input(event):
 	if not current_scene: return
 	if not (event is InputEventMouseButton): return
-	if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		current_line += 1
-		if current_line < len(current_scene.dialogue):
-			print(current_scene.dialogue[current_line])
-			$dialogue_box.text = current_scene.dialogue[current_line]
-		else:
-			$dialogue_box.visible = false
-			self.get_parent().open_prompt(current_scene)
+	if event.button_index != MOUSE_BUTTON_LEFT or not event.pressed: return
+	current_line += 1
+	if current_line < len(current_scene.dialogue):
+		$dialogue_box.text = current_scene.dialogue[current_line]
+	else:
+		$dialogue_box.visible = false
+		self.get_parent().open_prompt(current_scene)
