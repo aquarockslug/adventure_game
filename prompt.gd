@@ -3,7 +3,7 @@ extends Control
 func ask_question(scene):
 	var options = self.find_children("opt*")
 	$question.text = scene.question
-	for i in range(0, len(scene.options)):
+	for i in range(0, len(options)):
 		# update text 
 		options[i].text = scene.options[i].text
 		# update handler

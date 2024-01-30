@@ -3,7 +3,12 @@
 [resource]
 data = {
 "distraction.tscn": {
-"dialogue": ["You leave room 1 and arrive at room 3...", "There is..."],
+"dialogue": ["You radio a status report to the Moray and tell
+them that you are going to cast off from the line
+and descend under your own power. Your plan is
+approved and you cast off your line. Now you are
+on your own. The Seeker slips noiselessly into the
+undersea canyon."],
 "options": [{
 "affection": 0.0,
 "next": "",
@@ -24,7 +29,14 @@ data = {
 "question": "How can you get out of this situation?"
 },
 "drive.tscn": {
-"dialogue": ["You leave room 1 and arrive at room 2..."],
+"dialogue": ["Your sea suit will protect you from the intense
+pressures of the deep. It is a tight fit and takes you
+some time to put it on. Finally you slip from the
+airlock of the Seeker and stand on the ocean floor.
+It is a strange and marvelous world where your
+every move is slowed down. You begin to explore
+with your special hand-held searchlight. You
+examine the ledge by the canyon."],
 "options": [{
 "affection": 0.0,
 "next": "",
@@ -45,23 +57,28 @@ data = {
 "question": "What will you do"
 },
 "phone.tscn": {
-"dialogue": ["You arrive in room 1..", "There is..."],
+"dialogue": ["You are an underwater explorer. You are leav-
+ing to explore the deepest oceans. You must find
+the lost city of Atlantis. This is your most challeng-
+ing assignment. The Seeker crew is being lowered from the Maray by a
+strong, but thin cable.", "Within minutes, you are so
+deep in the ocean that little light filters down to
+you. The silence is eerie as the Seeker slips deeper
+and deeper.", "Now the cable attaching you to Maray is ex-
+tended almost to its limit. You have come to rest on
+a ledge near the canyon in the ocean floor that
+supposedly leads to the lost city of Atlantis."],
 "options": [{
-"affection": 5.0,
+"affection": 0.0,
 "next": "drive.tscn",
-"text": "go to 2"
+"text": "explore the ledge
+where the Seeker has come to rest"
 }, {
-"affection": 1.0,
-"next": "drive.tscn",
-"text": "go to 2"
-}, {
-"affection": -5.0,
+"affection": 0.0,
 "next": "distraction.tscn",
-"text": "go to 3"
-}, {
-"affection": 1.0,
-"next": "distraction.tscn",
-"text": "go to 3"
+"text": "cut loose from
+the Maray and dive with the Seeker
+into the canyon in the ocean floor"
 }],
 "question": "What will you do?"
 }

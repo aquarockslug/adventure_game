@@ -4,7 +4,7 @@ extends Node2D
 var scene_text = load(story_resource).data
 
 var current_scene
-var affection = 50
+var affection = 50 # depth instead?
 
 var scene_tscn = {
 	"phone.tscn": preload("res://phone.tscn"),
@@ -35,8 +35,7 @@ func play_scene(scene_name):
 	
 	# play dialogue
 	print(scene_text)
-	if scene_text[scene_name]:
-		$dialogue.play(scene_text[scene_name])
+	if scene_text[scene_name]: $dialogue.play(scene_text[scene_name])
 	
 func open_prompt(scene): $prompt.visible = true; $prompt.ask_question(scene)
 func change_affection(change_amount): set_affection(affection + change_amount)
