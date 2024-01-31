@@ -136,12 +136,12 @@
 			{
 				"depth": 0,
 				"next": "descent.tscn",
-				"text": "Plan your next expedition, eager to delve deeper into the ocean's mysteries"
+				"text": "Plan your next expedition, eager to\ndelve deeper into the ocean's mysteries"
 			},
 			{
 				"depth": 0,
-				"next": "end.tscn",
-				"text": "Reflect on your experiences, cherishing the wonders you've witnessed"
+				"next": "end",
+				"text": "Reflect on your experiences, cherishing\nthe wonders you've witnessed"
 			}
 		],
 		"question": "What will you do?"

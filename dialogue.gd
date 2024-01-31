@@ -11,7 +11,7 @@ func play(scene):
 		$dialogue_box.visible = true
 
 func _input(event):
-	if not current_scene: return
+	if not current_scene or not self.visible: return
 	if not (event is InputEventMouseButton): return
 	if event.button_index != MOUSE_BUTTON_LEFT or not event.pressed: return
 	current_line += 1

@@ -11,6 +11,11 @@ var scene_tscn = {
 	"descent.tscn": preload("res://scenes/descent.tscn"),
 	"cavern.tscn": preload("res://scenes/cavern.tscn"),
 	"shipwreck.tscn": preload("res://scenes/shipwreck.tscn"),
+	"reef.tscn": preload("res://scenes/reef.tscn"),
+	"discovery.tscn": preload("res://scenes/discovery.tscn"),
+	"trench.tscn": preload("res://scenes/trench.tscn"),
+	"encounter.tscn": preload("res://scenes/encounter.tscn"),
+	"return.tscn": preload("res://scenes/return.tscn")
 }
 
 func _ready():
@@ -19,21 +24,20 @@ func _ready():
 	
 func _start_game():
 	$title_screen.visible = false
-	$prompt.visible = true
 	play_scene("descent.tscn")
 	
 func play_scene(scene_name):
 	$prompt.visible = false
+	$dialogue.visible = true
+	if is_instance_valid(current_scene): current_scene.queue_free()# remove previous scene
+	if scene_name == "end": $title_screen.visible = true; $dialogue.visible = false; return
 	print("Current depth: ", depth)
-	
-	# remove previous scene if there is one
-	if current_scene: current_scene.queue_free()
 	
 	# instantiate scene file
 	if scene_name in scene_tscn:
 		current_scene = scene_tscn[scene_name].instantiate()
 		self.add_child(current_scene)
-	
+		
 	# play 
 	if scene_name != "": $dialogue.play(scene_text[scene_name])
 	
