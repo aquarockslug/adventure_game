@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://cifri1ra36pfs"]
+[gd_scene load_steps=2 format=3 uid="uid://cifri1ra36pfs"]
+
+[ext_resource type="Texture2D" uid="uid://c0dulhtl16nw7" path="res://images/Space002_0.png" id="1_dykin"]
 
 [node name="Node" type="Node"]
+
+[node name="Space0020" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(976, 227)
+scale = Vector2(1.22791, 0.705309)
+texture = ExtResource("1_dykin")

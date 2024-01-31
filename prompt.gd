@@ -15,6 +15,7 @@ func ask_question(scene):
 
 # handler for when an option button is pressed
 func _option_selected(next_scene, depth_change):
+	if not self.visible: return
 	$button_sound.play()
 	print("Switching to ", next_scene)
 	

@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://cwr1feq15kasi"]
+[gd_scene load_steps=3 format=3 uid="uid://cskmo2fcr2fqh"]
+
+[ext_resource type="Texture2D" uid="uid://cy687mit8pxll" path="res://images/Underwater.png" id="1_t0xdy"]
+[ext_resource type="Script" path="res://scenes/descent.gd" id="2_ewm1y"]
 
 [node name="Node" type="Node"]
+
+[node name="underwater" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(960, 1590)
+scale = Vector2(0.92, 2.11)
+texture = ExtResource("1_t0xdy")
+script = ExtResource("2_ewm1y")

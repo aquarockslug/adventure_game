@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dgfhd41mw2tem"]
+
+[ext_resource type="FontFile" uid="uid://bwdgyxqyt2qwe" path="res://iosevka.ttc" id="1_ps465"]
+
+[resource]
+font = ExtResource("1_ps465")
+font_size = 32
+font_color = Color(0, 0.886275, 0, 1)

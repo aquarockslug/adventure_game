@@ -2,8 +2,8 @@
 	"descent.tscn": {
 		"dialogue": [
 			"You are Captain Arielle, a renowned underwater explorer.",
-			"Today, you embark on a daring expedition to uncover the secrets hidden beneath the ocean's surface. As you descend into the depths, you face a series of choices that will shape your journey.",
-			"You stand at the edge of the research vessel, ready to plunge into the unknown."
+			"Today, you embark on a daring expedition to uncover the secrets hidden beneath the ocean's surface.",
+			"As you descend into the depths, you face a series of choices that will shape your journey.",
 		],
 		"options": [
 			{
@@ -22,13 +22,14 @@
 	"cavern.tscn": {
 		"dialogue": [
 			"Your decision leads you deeper into the ocean.",
-			"Suddenly, you stumble upon a dark cavern. Inside, you see eerie bioluminescent creatures dancing around."
+			"Suddenly, you stumble upon a dark cavern.",
+			"Inside, you see eerie bioluminescent creatures dancing around."
 		],
 		"options": [
 			{
 				"depth": 0,
 				"next": "trench.tscn",
-				"text": "Proceed cautiously, intrigued by the mysterious beauty"
+				"text": "Proceed cautiously, intrigued by\nthe mysterious beauty"
 			},
 			{
 				"depth": 0,
@@ -46,12 +47,12 @@
 			{
 				"depth": 0,
 				"next": "reef.tscn",
-				"text": "Continue your journey, wary of potential dangers lurking nearby"
+				"text": "Continue your journey, wary of\npotential dangers lurking nearby"
 			},
 			{
 				"depth": 0,
 				"next": "discovery.tscn",
-				"text": "Investigate the wreckage for any valuable artifacts"
+				"text": "Investigate the wreckage for\nany valuable artifacts"
 			}
 		],
 		"question": "What will you do?"
@@ -64,48 +65,48 @@
 			{
 				"depth": 0,
 				"next": "trench.tscn",
-				"text": "Venture into the passage, curious about what lies beyond"
+				"text": "Venture into the passage, curious\nabout what lies beyond"
 			},
 			{
 				"depth": 0,
 				"next": "encounter.tscn",
-				"text": "Stay and observe the marine life, appreciating the beauty of the reef"
+				"text": "Stay and observe the marine life,\nappreciating the beauty of the reef"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"trench.tscn": {
 		"dialogue": [
-			"Your journey leads you to a deep trench, where darkness envelops everything."
+			"Your journey leads you to a deep trench,\nwhere darkness envelops everything."
 		],
 		"options": [
 			{
 				"depth": 0,
 				"next": "discovery.tscn",
-				"text": "Dive deeper into the trench, eager to unravel its mysteries"
+				"text": "Dive deeper into the trench, eager\nto unravel its mysteries"
 			},
 			{
 				"depth": 0,
 				"next": "encounter.tscn",
-				"text": "Stay at the rim of the trench, cautious of the unknown depths below"
+				"text": "Stay at the rim of the trench, cautious of\nthe unknown depths below"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"encounter.tscn": {
 		"dialogue": [
-			"Suddenly, you encounter a massive creature, unlike anything you've ever seen."
+			"Suddenly, you encounter a massive creature, unlike\nanything you've ever seen."
 		],
 		"options": [
 			{
 				"depth": 0,
 				"next": "discovery.tscn",
-				"text": "Approach the creature cautiously, hoping to learn more about it"
+				"text": "Approach the creature cautiously, hoping\nto learn more about it"
 			},
 			{
 				"depth": 0,
 				"next": "cavern.tscn",
-				"text": "Retreat and find a safer route to continue your exploration"
+				"text": "Retreat and find a safer route to\ncontinue your exploration"
 			}
 		],
 		"question": "What will you do?"
@@ -118,12 +119,12 @@
 			{
 				"depth": 0,
 				"next": "return.tscn",
-				"text": "Document your findings and share them with the world"
+				"text": "Document your findings and share\nthem with the world"
 			},
 			{
 				"depth": 0,
 				"next": "return.tscn",
-				"text": "Keep the discovery a secret, fearing its exploitation by others"
+				"text": "Keep the discovery a secret, fearing\nits exploitation by others"
 			}
 		],
 		"question": "What will you do?"

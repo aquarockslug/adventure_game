@@ -23,6 +23,7 @@ func _ready():
 	$title_screen/background/start.pressed.connect(_start_game)
 	
 func _start_game():
+	$prompt/button_sound.play()
 	$title_screen.visible = false
 	play_scene("descent.tscn")
 	
