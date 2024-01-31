@@ -59,8 +59,7 @@ offset_top = 300.0
 offset_right = 15.5
 offset_bottom = 323.0
 grow_horizontal = 2
-text = "Atlantis Adventure
-"
+text = "Atlantis"
 label_settings = SubResource("LabelSettings_76h2p")
 
 [node name="prompt" type="Control" parent="."]

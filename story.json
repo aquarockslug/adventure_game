@@ -1,0 +1,161 @@
+{
+	"descent.tscn": {
+		"dialogue": [
+			"You are Captain Arielle, a renowned underwater explorer. Today, you embark on a daring expedition to uncover the secrets hidden beneath the ocean's surface. As you descend into the depths, you face a series of choices that will shape your journey.",
+			"You stand at the edge of the research vessel, ready to plunge into the unknown."
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "cavern.tscn",
+				"text": "Dive straight down into the abyss"
+			},
+			{
+				"depth": 0,
+				"next": "shipwreck.tscn",
+				"text": "Take a cautious approach and\nscout the surroundings first"
+			}
+		],
+		"question": "What will you do?"
+	},
+	"cavern.tscn": {
+		"dialogue": [
+			"Your decision leads you deeper into the ocean.",
+			"Suddenly, you stumble upon a dark cavern. Inside, you see eerie bioluminescent creatures dancing around."
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+	"shipwreck.tscn": {
+		"dialogue": [
+			"",
+			"",
+			""
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+	"reef.tscn": {
+		"dialogue": [
+			"",
+			"",
+			""
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+	"trench.tscn": {
+		"dialogue": [
+			"",
+			"",
+			""
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+	"encounter.tscn": {
+		"dialogue": [
+			"",
+			"",
+			""
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+	"discovery.tscn": {
+		"dialogue": [
+			"",
+			"",
+			""
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+	"return.tscn": {
+		"dialogue": [
+			"",
+			"",
+			""
+		],
+		"options": [
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			},
+			{
+				"depth": 0,
+				"next": "",
+				"text": ""
+			}
+		],
+		"question": "What will you do?"
+	},
+}
+

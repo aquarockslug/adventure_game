@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var story_resource: String = "res://story.tres"
+@export var story_resource: String = "res://story.json"
 var scene_text = load(story_resource).data
 
 var current_scene
@@ -8,9 +8,9 @@ var depth = 0
 
 # todo: preload scenes dir with loop
 var scene_tscn = {
-	"start.tscn": preload("res://scenes/start.tscn"),
-	"canyon.tscn": preload("res://scenes/canyon.tscn"),
-	"sea_monster.tscn": preload("res://scenes/sea_monster.tscn"),
+	"descent.tscn": preload("res://scenes/descent.tscn"),
+	"cavern.tscn": preload("res://scenes/cavern.tscn"),
+	"shipwreck.tscn": preload("res://scenes/shipwreck.tscn"),
 }
 
 func _ready():
@@ -20,7 +20,7 @@ func _ready():
 func _start_game():
 	$title_screen.visible = false
 	$prompt.visible = true
-	play_scene("start.tscn")
+	play_scene("descent.tscn")
 	
 func play_scene(scene_name):
 	$prompt.visible = false
@@ -41,20 +41,3 @@ func open_prompt(scene): $prompt.visible = true; $prompt.ask_question(scene)
 func change_depth(change_amount): set_depth(depth + change_amount)
 func set_depth(amount): depth = amount
 func format_story(): print(JSONBeautifier.beautify_json(JSON.stringify(scene_text)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
