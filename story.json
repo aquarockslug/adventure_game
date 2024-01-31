@@ -1,7 +1,8 @@
 {
 	"descent.tscn": {
 		"dialogue": [
-			"You are Captain Arielle, a renowned underwater explorer. Today, you embark on a daring expedition to uncover the secrets hidden beneath the ocean's surface. As you descend into the depths, you face a series of choices that will shape your journey.",
+			"You are Captain Arielle, a renowned underwater explorer.",
+			"Today, you embark on a daring expedition to uncover the secrets hidden beneath the ocean's surface. As you descend into the depths, you face a series of choices that will shape your journey.",
 			"You stand at the edge of the research vessel, ready to plunge into the unknown."
 		],
 		"options": [
@@ -13,7 +14,7 @@
 			{
 				"depth": 0,
 				"next": "shipwreck.tscn",
-				"text": "Take a cautious approach and\nscout the surroundings first"
+				"text": "Take a cautious approach"
 			}
 		],
 		"question": "What will you do?"
@@ -26,136 +27,124 @@
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "trench.tscn",
+				"text": "Proceed cautiously, intrigued by the mysterious beauty"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "shipwreck.tscn",
+				"text": "Retreat and continue exploring elsewhere"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"shipwreck.tscn": {
 		"dialogue": [
-			"",
-			"",
-			""
+			"As you explore further, you stumble upon the remains of an ancient shipwreck."
 		],
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "reef.tscn",
+				"text": "Continue your journey, wary of potential dangers lurking nearby"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "discovery.tscn",
+				"text": "Investigate the wreckage for any valuable artifacts"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"reef.tscn": {
 		"dialogue": [
-			"",
-			"",
-			""
+			"You come across a vibrant coral reef teeming with life. However, you notice a passage hidden within the coral maze."
 		],
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "trench.tscn",
+				"text": "Venture into the passage, curious about what lies beyond"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "encounter.tscn",
+				"text": "Stay and observe the marine life, appreciating the beauty of the reef"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"trench.tscn": {
 		"dialogue": [
-			"",
-			"",
-			""
+			"Your journey leads you to a deep trench, where darkness envelops everything."
 		],
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "discovery.tscn",
+				"text": "Dive deeper into the trench, eager to unravel its mysteries"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "encounter.tscn",
+				"text": "Stay at the rim of the trench, cautious of the unknown depths below"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"encounter.tscn": {
 		"dialogue": [
-			"",
-			"",
-			""
+			"Suddenly, you encounter a massive creature, unlike anything you've ever seen."
 		],
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "discovery.tscn",
+				"text": "Approach the creature cautiously, hoping to learn more about it"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "cavern.tscn",
+				"text": "Retreat and find a safer route to continue your exploration"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"discovery.tscn": {
 		"dialogue": [
-			"",
-			"",
-			""
+			"Your bravery pays off as you make a groundbreaking discovery"
 		],
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "return.tscn",
+				"text": "Document your findings and share them with the world"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "return.tscn",
+				"text": "Keep the discovery a secret, fearing its exploitation by others"
 			}
 		],
 		"question": "What will you do?"
 	},
 	"return.tscn": {
 		"dialogue": [
-			"",
-			"",
-			""
+			"Your expedition comes to an end as you ascend back to the surface, carrying with you the memories of your extraordinary journey."
 		],
 		"options": [
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "descent.tscn",
+				"text": "Plan your next expedition, eager to delve deeper into the ocean's mysteries"
 			},
 			{
 				"depth": 0,
-				"next": "",
-				"text": ""
+				"next": "end.tscn",
+				"text": "Reflect on your experiences, cherishing the wonders you've witnessed"
 			}
 		],
 		"question": "What will you do?"
-	},
+	}
 }
 
